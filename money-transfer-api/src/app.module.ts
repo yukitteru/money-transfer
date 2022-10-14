@@ -1,9 +1,10 @@
-import { Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config/dist';
-import { AuthModule } from './auth/auth.module';
+import { Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config/dist";
+import { AuthModule } from "./auth/auth.module";
+
 @Module({
   imports: [
-    ConfigModule.forRoot({ envFilePath: '.env.development' }),
+    ConfigModule.forRoot({ envFilePath: ".env.development" }),
     AuthModule,
   ],
   controllers: [],
